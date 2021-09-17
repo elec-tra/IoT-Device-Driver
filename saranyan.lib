@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# EL357N-G
+#
+DEF EL357N-G U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "EL357N-G" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 100 400 -100 0 1 0 N
+X Anode 1 -450 50 100 R 50 50 1 1 I
+X Cathode 2 -450 -50 100 R 50 50 1 1 O
+X Emitter 3 500 -50 100 L 50 50 1 1 O
+X Collector 4 500 50 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
