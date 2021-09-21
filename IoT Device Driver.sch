@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J3
-U 1 1 6144891D
-P 5100 3200
-F 0 "J3" H 5150 3517 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 5150 3426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 5100 3200 50  0001 C CNN
-F 3 "~" H 5100 3200 50  0001 C CNN
-	1    5100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 61449AC5
 P 3000 3200
@@ -207,7 +196,7 @@ U 1 1 614526D5
 P 4450 4550
 F 0 "K1" H 4950 4864 50  0000 C CNN
 F 1 "G3MC-202P-VD_DC12" H 4950 4773 50  0000 C CNN
-F 2 "Omron-G3MC-202P-VD_DC12-*" H 4450 5050 50  0001 L CNN
+F 2 "eec:Omron-G3MC-202P-VD_DC12-MFG" H 4450 5050 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g3mc.pdf" H 4450 5150 50  0001 L CNN
 F 4 "+80°C" H 4450 5250 50  0001 L CNN "ambient temperature range high"
 F 5 "-30°C" H 4450 5350 50  0001 L CNN "ambient temperature range low"
@@ -296,7 +285,7 @@ U 1 1 61474B42
 P 3400 4500
 F 0 "U2" H 3425 4775 50  0000 C CNN
 F 1 "EL357N-G" H 3425 4684 50  0000 C CNN
-F 2 "" H 3400 4500 50  0001 C CNN
+F 2 "saranyan:EL357N_G-2.54SOP4P" H 3400 4500 50  0001 C CNN
 F 3 "" H 3400 4500 50  0001 C CNN
 	1    3400 4500
 	1    0    0    -1  
@@ -389,56 +378,16 @@ F 3 "~" H 7250 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 4350 7050 4350
-$Comp
-L power:+3.3V #PWR08
-U 1 1 6148FED5
-P 4250 3350
-F 0 "#PWR08" H 4250 3200 50  0001 C CNN
-F 1 "+3.3V" H 4265 3523 50  0000 C CNN
-F 2 "" H 4250 3350 50  0001 C CNN
-F 3 "" H 4250 3350 50  0001 C CNN
-	1    4250 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3350 4250 3400
-Wire Wire Line
-	4250 3400 4900 3400
 Text GLabel 4700 2000 3    50   Input ~ 0
-Tx
-Text GLabel 4900 3100 0    50   Input ~ 0
 Tx
 Text GLabel 4800 2000 3    50   Input ~ 0
 Rx
-Text GLabel 5400 3400 2    50   Input ~ 0
-Rx
 Text GLabel 6900 2000 3    50   Input ~ 0
-GPIO0
-Text GLabel 5400 3300 2    50   Input ~ 0
 GPIO0
 Text GLabel 7000 2000 3    50   Input ~ 0
 GPIO2
-Text GLabel 5400 3200 2    50   Input ~ 0
-GPIO2
 Text GLabel 2600 4450 0    50   Input ~ 0
 GPIO2
-Text GLabel 4900 3300 0    50   Input ~ 0
-RST
-$Comp
-L power:GND #PWR012
-U 1 1 61495F70
-P 5900 3100
-F 0 "#PWR012" H 5900 2850 50  0001 C CNN
-F 1 "GND" H 5905 2927 50  0000 C CNN
-F 2 "" H 5900 3100 50  0001 C CNN
-F 3 "" H 5900 3100 50  0001 C CNN
-	1    5900 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 3100 5900 3100
-Text GLabel 4900 3200 0    50   Input ~ 0
-CH_EN
 Text GLabel 2950 2000 3    50   Input ~ 0
 RST
 Text GLabel 3050 2000 3    50   Input ~ 0
@@ -573,7 +522,7 @@ U 1 1 6149BB4F
 P 6750 4200
 F 0 "F1" V 6553 4200 50  0000 C CNN
 F 1 "Fuse" V 6644 4200 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_EATON_H15-V-1_Vertical_Closed" V 6680 4200 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 6680 4200 50  0001 C CNN
 F 3 "~" H 6750 4200 50  0001 C CNN
 	1    6750 4200
 	0    1    1    0   
@@ -584,4 +533,55 @@ Wire Wire Line
 	6450 4200 6600 4200
 Wire Wire Line
 	6900 4200 7000 4200
+Text GLabel 4900 3150 0    50   Input ~ 0
+RST
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J3
+U 1 1 614E39E6
+P 5100 3050
+F 0 "J3" H 5150 3367 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 5150 3276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 5100 3050 50  0001 C CNN
+F 3 "~" H 5100 3050 50  0001 C CNN
+	1    5100 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 2950 0    50   Input ~ 0
+Tx
+Text GLabel 4900 3050 0    50   Input ~ 0
+CH_EN
+$Comp
+L power:+3.3V #PWR08
+U 1 1 614E4A4D
+P 4400 3200
+F 0 "#PWR08" H 4400 3050 50  0001 C CNN
+F 1 "+3.3V" H 4415 3373 50  0000 C CNN
+F 2 "" H 4400 3200 50  0001 C CNN
+F 3 "" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 3050 2    50   Input ~ 0
+GPIO2
+Text GLabel 5400 3150 2    50   Input ~ 0
+GPIO0
+Text GLabel 5400 3250 2    50   Input ~ 0
+Rx
+$Comp
+L power:GND #PWR012
+U 1 1 614E6EBE
+P 5800 2950
+F 0 "#PWR012" H 5800 2700 50  0001 C CNN
+F 1 "GND" H 5805 2777 50  0000 C CNN
+F 2 "" H 5800 2950 50  0001 C CNN
+F 3 "" H 5800 2950 50  0001 C CNN
+	1    5800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2950 5800 2950
+Wire Wire Line
+	4400 3200 4400 3250
+Wire Wire Line
+	4400 3250 4900 3250
 $EndSCHEMATC
