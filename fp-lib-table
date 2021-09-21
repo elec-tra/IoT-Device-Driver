@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name saranyan)(type KiCad)(uri ${KIPRJMOD}/saranyan.pretty)(options "")(descr ""))
-  (lib (name G3MC)(type KiCad)(uri "H:/Downloads/Projects/KiCAD/All Ext Libraries/Relay_Omron_G3MC-202P-VD DC12/eec.pretty")(options "")(descr ""))
-)

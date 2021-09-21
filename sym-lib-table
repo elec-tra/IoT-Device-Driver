@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name eec)(type Legacy)(uri "H:/Downloads/Projects/KiCAD/All Ext Libraries/Relay_Omron_G3MC-202P-VD DC12/eec.lib")(options "")(descr ""))
-  (lib (name saranyan)(type Legacy)(uri ${KIPRJMOD}/saranyan.lib)(options "")(descr ""))
-)
