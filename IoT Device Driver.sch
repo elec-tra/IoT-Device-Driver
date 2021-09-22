@@ -125,7 +125,7 @@ U 1 1 6144D4E3
 P 7150 3200
 F 0 "PS1" H 7150 3567 50  0000 C CNN
 F 1 "IRM-03-5" H 7150 3476 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT" H 7150 2850 50  0001 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_SMD" H 7150 2850 50  0001 C CNN
 F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 7150 2800 50  0001 C CNN
 	1    7150 3200
 	1    0    0    -1  
