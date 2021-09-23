@@ -195,7 +195,7 @@ L eec:G3MC-202P-VD_DC12 K1
 U 1 1 614526D5
 P 4450 4550
 F 0 "K1" H 4950 4864 50  0000 C CNN
-F 1 "G3MC-202P-VD_DC12" H 4950 4773 50  0000 C CNN
+F 1 "G3MC-202P-VD_DC5" H 4950 4773 50  0000 C CNN
 F 2 "eec:Omron-G3MC-202P-VD_DC12-MFG" H 4450 5050 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g3mc.pdf" H 4450 5150 50  0001 L CNN
 F 4 "+80°C" H 4450 5250 50  0001 L CNN "ambient temperature range high"
@@ -378,62 +378,62 @@ F 3 "~" H 7250 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 4350 7050 4350
-Text GLabel 4700 2000 3    50   Input ~ 0
+Text GLabel 3900 2000 3    50   Input ~ 0
 Tx
-Text GLabel 4800 2000 3    50   Input ~ 0
+Text GLabel 4000 2000 3    50   Input ~ 0
 Rx
-Text GLabel 6900 2000 3    50   Input ~ 0
+Text GLabel 5200 2000 3    50   Input ~ 0
 GPIO0
-Text GLabel 7000 2000 3    50   Input ~ 0
+Text GLabel 5300 2000 3    50   Input ~ 0
 GPIO2
 Text GLabel 2600 4450 0    50   Input ~ 0
 GPIO2
-Text GLabel 2950 2000 3    50   Input ~ 0
+Text GLabel 2500 2000 3    50   Input ~ 0
 RST
-Text GLabel 3050 2000 3    50   Input ~ 0
+Text GLabel 2600 2000 3    50   Input ~ 0
 CH_EN
 $Comp
 L power:GND #PWR010
 U 1 1 614974B0
-P 4900 2000
-F 0 "#PWR010" H 4900 1750 50  0001 C CNN
-F 1 "GND" H 4905 1827 50  0000 C CNN
-F 2 "" H 4900 2000 50  0001 C CNN
-F 3 "" H 4900 2000 50  0001 C CNN
-	1    4900 2000
+P 4100 2000
+F 0 "#PWR010" H 4100 1750 50  0001 C CNN
+F 1 "GND" H 4105 1827 50  0000 C CNN
+F 2 "" H 4100 2000 50  0001 C CNN
+F 3 "" H 4100 2000 50  0001 C CNN
+	1    4100 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 614A936D
-P 2950 1800
-F 0 "J1" V 2914 1612 50  0000 R CNN
-F 1 "Conn_01x02" V 2823 1612 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2950 1800 50  0001 C CNN
-F 3 "~" H 2950 1800 50  0001 C CNN
-	1    2950 1800
+P 2500 1800
+F 0 "J1" V 2464 1612 50  0000 R CNN
+F 1 "Conn_01x02" V 2373 1612 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2500 1800 50  0001 C CNN
+F 3 "~" H 2500 1800 50  0001 C CNN
+	1    2500 1800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 614A9BB4
-P 6900 1800
-F 0 "J4" V 6864 1612 50  0000 R CNN
-F 1 "Conn_01x02" V 6773 1612 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6900 1800 50  0001 C CNN
-F 3 "~" H 6900 1800 50  0001 C CNN
-	1    6900 1800
+P 5200 1800
+F 0 "J4" V 5164 1612 50  0000 R CNN
+F 1 "Conn_01x02" V 5073 1612 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5200 1800 50  0001 C CNN
+F 3 "~" H 5200 1800 50  0001 C CNN
+	1    5200 1800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 614AA5E9
-P 4800 1800
-F 0 "J2" V 4764 1612 50  0000 R CNN
-F 1 "Conn_01x03" V 4673 1612 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4800 1800 50  0001 C CNN
-F 3 "~" H 4800 1800 50  0001 C CNN
-	1    4800 1800
+P 4000 1800
+F 0 "J2" V 3964 1612 50  0000 R CNN
+F 1 "Conn_01x03" V 3873 1612 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4000 1800 50  0001 C CNN
+F 3 "~" H 4000 1800 50  0001 C CNN
+	1    4000 1800
 	0    -1   -1   0   
 $EndComp
 Text Notes 2400 4100 0    50   ~ 0
@@ -584,4 +584,93 @@ Wire Wire Line
 	4400 3200 4400 3250
 Wire Wire Line
 	4400 3250 4900 3250
+$Comp
+L Connector_Generic:Conn_01x06 J7
+U 1 1 6151AA3C
+P 6700 1800
+F 0 "J7" V 6664 1412 50  0000 R CNN
+F 1 "Conn_01x06" V 6573 1412 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6700 1800 50  0001 C CNN
+F 3 "~" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR022
+U 1 1 6151C48B
+P 6700 2100
+F 0 "#PWR022" H 6700 1950 50  0001 C CNN
+F 1 "+3.3V" V 6700 2350 50  0000 C CNN
+F 2 "" H 6700 2100 50  0001 C CNN
+F 3 "" H 6700 2100 50  0001 C CNN
+	1    6700 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR023
+U 1 1 6151F1E6
+P 6800 2100
+F 0 "#PWR023" H 6800 1950 50  0001 C CNN
+F 1 "+3.3V" V 6800 2350 50  0000 C CNN
+F 2 "" H 6800 2100 50  0001 C CNN
+F 3 "" H 6800 2100 50  0001 C CNN
+	1    6800 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR021
+U 1 1 6151F7D4
+P 6600 2100
+F 0 "#PWR021" H 6600 1950 50  0001 C CNN
+F 1 "+5V" V 6600 2300 50  0000 C CNN
+F 2 "" H 6600 2100 50  0001 C CNN
+F 3 "" H 6600 2100 50  0001 C CNN
+	1    6600 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 61520689
+P 6500 2100
+F 0 "#PWR020" H 6500 1950 50  0001 C CNN
+F 1 "+5V" V 6500 2300 50  0000 C CNN
+F 2 "" H 6500 2100 50  0001 C CNN
+F 3 "" H 6500 2100 50  0001 C CNN
+	1    6500 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 6152252F
+P 6900 2100
+F 0 "#PWR024" H 6900 1850 50  0001 C CNN
+F 1 "GND" V 6900 1900 50  0000 C CNN
+F 2 "" H 6900 2100 50  0001 C CNN
+F 3 "" H 6900 2100 50  0001 C CNN
+	1    6900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 61522993
+P 7000 2100
+F 0 "#PWR025" H 7000 1850 50  0001 C CNN
+F 1 "GND" V 7000 1900 50  0000 C CNN
+F 2 "" H 7000 2100 50  0001 C CNN
+F 3 "" H 7000 2100 50  0001 C CNN
+	1    7000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2000 6500 2100
+Wire Wire Line
+	6600 2000 6600 2100
+Wire Wire Line
+	6700 2000 6700 2100
+Wire Wire Line
+	6800 2000 6800 2100
+Wire Wire Line
+	6900 2000 6900 2100
+Wire Wire Line
+	7000 2000 7000 2100
 $EndSCHEMATC
